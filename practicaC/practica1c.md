@@ -35,13 +35,24 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
+   50 MHz to 2.2 GHz
 2. ¿Qué parámetros del USRP 2920 se deben configurar para transmitir una señal en una frecuencia específica?
+
 3. ¿Cómo se configura el osciloscopio para medir la amplitud y la frecuencia de una señal?
+   
 4. ¿Qué diferencia hay entre medir una señal en el dominio del tiempo (osciloscopio) y en el dominio de la frecuencia (analizador de espectros)?
+
 5. ¿Cómo se mide el piso de ruido en el analizador de espectros? ¿Cómo afecta la frecuencia central, SPAN y RBW la medida de piso de ruido? ¿Por qué?
+
 
 ### **Evidencia**
 - Lista con las 5 especificaciones más relevantes de cada equipo.
+  1. USRP 2920
+     a. Frequency Range
+     b. Gain range
+     c.
+  3. R&S RTB2004
+  4. R&S FPC1000
 - Realice una medición de piso de ruido normalizado.
 
 ---
