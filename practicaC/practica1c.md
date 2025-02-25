@@ -35,7 +35,7 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
-   50 MHz to 2.2 GHz
+   50 MHz to 2.2 GHz y el analizador 1 GHz
 2. ¿Qué parámetros del USRP 2920 se deben configurar para transmitir una señal en una frecuencia específica?
 
 3. ¿Cómo se configura el osciloscopio para medir la amplitud y la frecuencia de una señal?
