@@ -187,5 +187,6 @@ Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento d
 5. ¿Qué aplicaciones prácticas tienen las mediciones de potencia y ancho de banda en sistemas de comunicaciones reales?
    Medir la potencia y el ancho de banda de señales es necesario ya que esto aporta qué rango de frecuencias son útiles, la potencia indica la calidad de la comunicación o también para determinar niveles de energía.
 6. ¿Cómo se puede medir la respuesta en frecuencia de un canal alámbrico?
-   
+   Conectar el canal alámbrico al Analizador de Espectros usando un adaptador si se requiere, podría usarse un Span grande y un RBW relativamente pequeño (100 Hz o 300 Hz ya que 1 Hz consumiría demasiado tiempo de sweep). Sería esperable una atenuación grande por el mismo cable. 
 7. ¿Cómo se puede obtener un modelo sencillo de las pérdidas (_pathloss_) en un canal inalámbrico?
+   El modelo FSPL (Free Space Path Loss) asumiendo que la señal se propaga sin obstaculos al aire libre, la distancia provoca atenuaciones y además la frecuencia también afecta a las pérdidas. FSLP = (4pi*Distancia*Frecuencia/Velocidad_de_la_luz)^2 en Watts
