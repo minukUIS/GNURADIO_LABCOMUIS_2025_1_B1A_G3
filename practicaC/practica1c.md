@@ -145,9 +145,11 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 3. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
    El ancho de banda de la señal transmitida se midió aumentando el RBW y utilizar los Marcadores para acotar la señal en un rango "aceptable", es decir, el método x-dB por debajo del punto más alto de la señal.
 4. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
-   Utilizando los marcadores se ubica uno en un pico y un segundo marcador en el piso de ruido
+   Utilizando los marcadores se ubica uno en un pico y un segundo marcador en el piso de ruido, el analizador de espectros mostrará una diferencia de potencia entre marcadores y esa seria el SNR.
 5. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
+   Cambia principalmente el valor de los "picos" de la señal.
 6. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
+   Según el osciloscopio usado, existe un apartado para analizar el espectro de la señal mediante una FFT. Esto mostrará los componentes en frecuencia que más aporte tienen en la señal y de esta forma se puede medir la potencia de la señal como si fuera un analizador de espectros.
 
 ### **Evidencia**
 - Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien las principales comparaciones realizadas.
@@ -175,9 +177,15 @@ Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento d
 
 ### **Preguntas Orientadoras**
 1. ¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
+   Si el SNR es relativamente alto, la calidad de la señal es apropiada ya que un SNR bajo implica que la señal tiene una amplitud baja respecto al piso de ruido.
 2. ¿Cómo afecta el piso de ruido a la capacidad de detectar señales débiles?
+   El piso de ruido tienen un gran impacto en estas ya que si son muy débiles, estas serían indistinguibles del piso de ruido en el analizador por lo que medir su potencia sería difícil en caso de que no se pueda modificar su amplitud o ganancia para poder hacer una medición.
 3. ¿Qué limitaciones tienen los equipos utilizados en términos de ancho de banda y precisión en las mediciones?
+   En este caso, los osciloscopios usados tienen un límite práctico de 800 MHz ya que frecuencias por encima de estas provocan demasiadas fluctuaciones de medición. Y en cuanto a los analizadores de espectros, un limitante sería la forma en que se quiere medir una señal, es decir, si uno quiere mucha mayor precisión con un RBW muy baja, tiene que sacrificar Sweep Time.
 4. ¿Cómo se pueden mejorar las mediciones de señal en un entorno con alto nivel de ruido?
+   Reducir la resolución y usar un Span apropiado, y además si es posible modificar la ganancia de la señal transmitida, aumentarla para alejarla del ruido.
 5. ¿Qué aplicaciones prácticas tienen las mediciones de potencia y ancho de banda en sistemas de comunicaciones reales?
+   Medir la potencia y el ancho de banda de señales es necesario ya que esto aporta qué rango de frecuencias son útiles, la potencia indica la calidad de la comunicación o también para determinar niveles de energía.
 6. ¿Cómo se puede medir la respuesta en frecuencia de un canal alámbrico?
+   
 7. ¿Cómo se puede obtener un modelo sencillo de las pérdidas (_pathloss_) en un canal inalámbrico?
