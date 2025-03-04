@@ -47,7 +47,7 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 
 ### **Evidencia**
 - Lista con las 5 especificaciones más relevantes de cada equipo.
-  1. USRP 2920:
+  1. USRP 2920: Rango de frecuencias útil,
   2. R&S RTB2004
   3. R&S FPC1000
 - Realice una medición de piso de ruido normalizado.
@@ -80,10 +80,15 @@ Generar y analizar señales en GNU Radio para entender cómo se comportan difere
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
+   La diferencia entre una fuente de tipo flotante es princiaplmente un número único decimal. Mientras que una fuente de tipo complejo agrega otra variable que también es un numero decimal pero esta es el componente imaginario de la fuente. En una de tipo flotante solo existe la parte real de la señal.
 2. ¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
+   La forma de la onda afecta demasiado la distribución de la energía ya que su descomposición en series de fourier tiene más componentes. En el caso de una senoidal, debería mostrar 2 picos mientras que por ejemplo una sierra, muestra varios picos en el dominio de la frecuencia.
 3. ¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
+   En el dominio del tiempo no es tan fácilmente apreciable más que un leve cambio de amplitud. pero en el dominio de la frecuencia la potencia de las señales aumentan la potencia notablemente. Teóricamente esto es correcto ya que en el dominio de la frecuencia, esto es equivalente a agregar una señal con mismas componentes frecuenciales lo que suma la potencia (cabe recalcar que no es lineal).
 4. ¿Cómo se relaciona la amplitud de la señal con la potencia observada en el dominio de la frecuencia?
+   La amplitud de la señal se relaciona con la potencia debido a su representación en Fourier. Matemáticamente esto se debe a que el espectro de señales de forma Acos(wt + p), es equivalente a dos impulsos de amplitud A/2. 
 5. ¿Qué diferencias se observan entre una señal senoidal y una señal cuadrada en el dominio de la frecuencia?
+   En el dominio de la frecuencia la señal senoidal son uno o dos picos apreciables según la frecuencia de la señal (no la señal portadora), en el caso de una señal cuadrada son coeficientes de valor 2A/(pi*n) lo que significa que esto son varios impulsos que van reduciendo de amplitud según el valor del n-armónico.
 
 ### **Evidencias**
 - Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien cada una de las comparaciones realizadas.
@@ -134,9 +139,13 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
+   Se debe configurar la fuente para que sea una tipo seno o coseno, de esta forma uno puede cambiar la Frecuencia Carrier para que esta se muestre en el analizador de espectros.
 2. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
+   Principalmente la ganancia y el tipo de fuente, si es flotante o compleja.
 3. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
+   El ancho de banda de la señal transmitida se midió aumentando el RBW y utilizar los Marcadores para acotar la señal en un rango "aceptable", es decir, el método x-dB por debajo del punto más alto de la señal.
 4. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
+   Utilizando los marcadores se ubica uno en un pico y un segundo marcador en el piso de ruido
 5. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
 6. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
 
