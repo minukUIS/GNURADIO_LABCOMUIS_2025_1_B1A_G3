@@ -35,26 +35,23 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
-   50 MHz to 2.2 GHz y el analizador 1 GHz
+   50 MHz to 2.2 GHz y el analizador 1 GHz de SPAN
 2. ¿Qué parámetros del USRP 2920 se deben configurar para transmitir una señal en una frecuencia específica?
-
+   Se debe configurar la Frecuencia de muestreo, la Frecuencia de la señal y la Ganancia al transmitirse
 3. ¿Cómo se configura el osciloscopio para medir la amplitud y la frecuencia de una señal?
-   
+   Se debe asegurar que la señal sea visible de forma que se aprecie al menos un ciclo completo y la amplitud no sea ni muy pequeña pero tampoco se salga de la pantalla. Luego ir al apartado de Measure y mostrar Amplitud y Frecuencia.
 4. ¿Qué diferencia hay entre medir una señal en el dominio del tiempo (osciloscopio) y en el dominio de la frecuencia (analizador de espectros)?
-
+   En el dominio de la frecuencia, la señal muestra las frecuencias fundamentales y los armónicos que la componen pero en el tiempo se ve la variación de esta a lo largo de un intervalo de tiempo, dependiendo de la información que uno requiera es más facil adquirir la información de uno o el otro. Por ejemplo al calcular la potencia de una señal, sería más sencillo analizar en frecuencia para encontrar los "picos" de la señal en frecuencia y luego llevarlos a potencia.
 5. ¿Cómo se mide el piso de ruido en el analizador de espectros? ¿Cómo afecta la frecuencia central, SPAN y RBW la medida de piso de ruido? ¿Por qué?
-
+   El piso de ruido se puede medir de varias formas y una de ellas sería normalizar el RBW a 1 Hz. De esta forma el logaritmo no afecta la potencia del ruido a que si estuviera en 300 Hz o 1 KHz. La frecuencia central también importa porque es distinto decir el piso de ruido en un rango de frecuencias donde no existe una señal apreciable, a una señal donde sí aparece una señal y uno quiera mirar el ancho de banda útil y despreciar lo demás como "ruido".
 
 ### **Evidencia**
 - Lista con las 5 especificaciones más relevantes de cada equipo.
-  1. USRP 2920
-     a. Frequency Range
-     b. Gain range
-     c.
-  3. R&S RTB2004
-  4. R&S FPC1000
+  1. USRP 2920:
+  2. R&S RTB2004
+  3. R&S FPC1000
 - Realice una medición de piso de ruido normalizado.
-
+   El resultado fue de -55.20 dBm aproximadamente.
 ---
 
 ## **Actividad 2: Simulación de Señales en GNU Radio**
