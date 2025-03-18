@@ -132,7 +132,7 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio de l
   - **NOTA:** La frecuencia de transmisión no debe superar los 1000 MHz para ser observada en el analizador. Para el experimento, considere las relaciones de muestreo correspondientes.
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? La distancia entre transmisor y receptor utilizando cables se reduce considerablemente ya que 3dB en potencia significa que se redujo casi la mitad.
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno? Al igual que con el experimento del osciloscopio, la distancia entre las antenas muestra una leve reducción de la potencia de la señal al estar más alejadas que al estar cercanas. Y es posible compensar el fenómeno usando algo que reflecte las ondas.
-- ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
+- ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica? Modelo de pérdidas por espacio libre para las antenas, pérdidas por cable coaxial 
 
 ### Evidencia
 
@@ -162,8 +162,8 @@ Familiarizarse con los efectos de los fenómenos de un canal alámbrico e inalá
 
 ### Preguntas Orientadoras
 
-- ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
-- ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
+- ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida? Los fenómenos que afectan la señal son mayoritariamente indeseados, por muchas razones, pérdida de potencia de una señal, mucho ruido evita que una señal se capte correctamente e incluso la distancia es un factor importante en cuanto a transmisión de señales.
+- ¿Cómo se pueden mitigar los efectos del canal en la señal recibida? Dependiendo del tipo de efecto podría poder ser mitigado, por ejemplo en el caso de las antenas se pueden usar reflectores para captar llevar mejor las ondas a la antena. Pero efectos como las pérdidas por cable coaxial son más complicados de arreglar debido a que son fenómenos que son del propio medio.
 
 ### Evidencia
 
