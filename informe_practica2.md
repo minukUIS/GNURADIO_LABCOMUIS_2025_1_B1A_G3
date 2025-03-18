@@ -103,6 +103,8 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio del 
 ![dcdb2ca6-cb10-4287-beac-d4c30b451a54](https://github.com/user-attachments/assets/0fee06e5-9176-4993-a1cf-da49b50189aa)
 ![1394cfd6-1f62-4c95-85af-d04c8e4a1e20](https://github.com/user-attachments/assets/d4b3319f-c5d2-4c70-ac26-02e382e5c613)
 ![01a32872-b119-4414-9469-bcca0e881e79](https://github.com/user-attachments/assets/040bd5d1-844c-4a91-831f-df909d719538)
+![17793de2-1d71-4eb1-9d73-3ec783fca242](https://github.com/user-attachments/assets/f1e98aad-9bc4-4c41-8fb9-2d9707be6392)
+![22276c12-2e9e-44f9-b3ac-46d17bf82c75](https://github.com/user-attachments/assets/813dbd3c-9f72-46bc-8e9d-cc6166a4b369)
 
 ## Actividad 3: Fenómenos de canal en el analizador de espectro
 
